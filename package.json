@@ -1,0 +1,35 @@
+{
+  "name": "date-universal",
+  "version": "0.0.1",
+  "description": "date-universal is a node module used to print date in desired format. It can be used for any localization you want to use in your node application.It can be easily used to add day,month,week hour,minute to a datetime value.you can use format using in php. you don't need to remember extra format or function to use this.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard & mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krgautam/date-universal.git"
+  },
+  "keywords": [
+    "date",
+    "php date format",
+    "multilingual date",
+    "add day,month,year,hour ,minutes,sec to datetime",
+    "universal date format",
+    "date in desired format desired language and desired timezone."
+  ],
+  "author": "Gautam Kumar Thakur <kgautam90@gmail.com> (https://github.com/krgautam)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krgautam/date-universal/issues"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "homepage": "https://github.com/krgautam/date-universal#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "standard": "^10.0.2"
+  }
+}
