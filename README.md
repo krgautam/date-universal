@@ -10,7 +10,7 @@ npm install --save date-universal
 'use strict'
 
 var dateUniversal = require('date-universal')
-date.UTC('Asia/Kolkata')
+dateUniversal.UTC('Asia/Kolkata')
 console.log(dateUniversal.date('Y-m-d H:i:s')) // => 2017-07-03 16:53:14
 dateUniversal.localizationData.fr = {
   longDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
