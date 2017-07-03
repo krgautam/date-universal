@@ -14,7 +14,7 @@ dateUniversal.UTC('Asia/Kolkata')
 console.log(dateUniversal.date('Y-m-d H:i:s')) // => 2017-07-03 16:53:14
 dateUniversal.localizationData.fr = {
   longDays: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'],
-  shortDays: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
+  shortDays: ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Dima'],
   longMonths: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
   shortMonths: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Jui', 'Auu', 'Sep', 'Oct', 'Nov', 'Dec']
 }
