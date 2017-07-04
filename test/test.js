@@ -322,4 +322,25 @@ describe('date', function () {
       assert.equal(dateUniversal.date('s.u', testDate), '05.034')
     })
   
+    it('should return the seconds since the unix epoch', function () {
+      assert.equal(dateUniversal.date('U', testDate), '1454556245')
+    })
+ 
+    it('should return the timezone offset seperated by a colon', function () {
+      assert.equal(dateUniversal.date('P', testDate), '+00:00')
+    })
+  
+    it('should return the timezone offset not seperated by a colon', function () {
+      assert.equal(dateUniversal.date('O', testDate), '+0000')
+    })
+    it('should return the date formatted in iso 8601 format', function () {
+      assert.equal(dateUniversal.date('c', testDate), '2016-02-04T03:24:05+00:00')
+    })
+    it('should return the date formatted rfc2822 format', function () {
+      assert.equal(dateUniversal.date('r', testDate), 'Thu, 04 Feb 2016 03:24:05 +0000')
+    })
+    it('should skip over letters that are prefixed with a slash (\\)', function () {
+      assert.equal(dateUniversal.date('\\rc', testDate), 'r2016-02-04T03:24:05+00:00')
+      assert.equal(dateUniversal.date('Y-\\m-d H:\\i:s', testDate), '2016-m-04 03:i:05')
+  })
 })
