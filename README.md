@@ -1,4 +1,4 @@
-# date-universal [![Coverage Status](https://coveralls.io/repos/github/krgautam/date-universal/badge.svg?branch=master)](https://coveralls.io/github/krgautam/date-universal?branch=master) [![Build Status](https://travis-ci.org/krgautam/date-universal.svg?branch=master)](https://travis-ci.org/krgautam/date-universal)
+# date-universal[![Coverage Status](https://coveralls.io/repos/github/krgautam/date-universal/badge.svg?branch=master)](https://coveralls.io/github/krgautam/date-universal?branch=master) [![Build Status](https://travis-ci.org/krgautam/date-universal.svg?branch=master)](https://travis-ci.org/krgautam/date-universal)
 date-universal is a node module used to print date in desired format. It can be used for any localization you want to use in your node application.It can be easily used to add day,month,week hour,minute to a datetime value.you can use format using in php. you don't need to remember extra format or function to use this.
 #### install
 
