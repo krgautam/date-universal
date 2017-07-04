@@ -42,10 +42,16 @@
       return String(date.getDate())
     },
     D: function (date, locale) {
+      if(date.getDay()>0)
       return localizationData[locale]['shortDays'][date.getDay() - 1]
+      else 
+      return localizationData[locale]['shortDays'][6]
     },
     l: function (date, locale) {
+      if(date.getDay()>0)  
       return localizationData[locale]['longDays'][date.getDay() - 1]
+      else 
+      return localizationData[locale]['longDays'][6]    
     },
     N: function (date, locale) {
       return iso8601NumericDay[date.getDay()]
@@ -143,11 +149,11 @@
       var minutes = offsetMinutes % 60
       return sign + String(10000 + (100 * hours) + minutes).slice(1)
     },
-    c: function (_date) {
-      return date('Y-m-dTH:i:sP', _date)
+    c: function (_date, locale) {
+      return date('Y-m-dTH:i:sP', _date, locale)
     },
-    r: function (_date) {
-      return date('D, d M Y H:i:s O', _date)
+    r: function (_date, locale) {
+      return date('D, d M Y H:i:s O', _date, locale)
     }
   }
 
